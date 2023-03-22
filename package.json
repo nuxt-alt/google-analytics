@@ -1,0 +1,50 @@
+{
+    "name": "@nuxt-alt/google-analytics",
+    "version": "0.0.3",
+    "description": "An alternative google analytics 4 module for nuxt3",
+    "homepage": "https://github.com/nuxt-alt/google-analytics",
+    "author": "Teranode",
+    "keywords": [
+        "nuxt",
+        "nuxtjs",
+        "nuxt-module",
+        "nuxt-plugin",
+        "nuxt-module-alternatives",
+        "@nuxtjs/google-analytics"
+    ],
+    "license": "MIT",
+    "type": "module",
+    "main": "./dist/module.cjs",
+    "module": "./dist/module.mjs",
+    "types": "./dist/runtime/types.d.ts",
+    "scripts": {
+        "dev": "nuxi dev playground",
+        "dev:build": "nuxi build playground",
+        "dev:prepare": "unbuild --stub && nuxi prepare playground",
+        "prepack": "unbuild"
+    },
+    "files": [
+        "dist"
+    ],
+    "dependencies": {
+        "@nuxt/kit": "^3.3.1",
+        "defu": "latest"
+    },
+    "devDependencies": {
+        "@types/node": "^18.15.5",
+        "nuxt": "^3.3.1",
+        "unbuild": "latest"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/nuxt-alt/google-analytics.git",
+        "directory": "@nuxt-alt/google-analytics"
+    },
+    "bugs": {
+        "url": "https://github.com/nuxt-alt/google-analytics/issues"
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "packageManager": "yarn@3.3.1"
+}
